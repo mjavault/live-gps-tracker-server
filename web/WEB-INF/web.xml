@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>PostServlet</servlet-name>
+        <servlet-class>tracking.web.PostServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DiffServlet</servlet-name>
+        <servlet-class>tracking.web.DiffServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FullServlet</servlet-name>
+        <servlet-class>tracking.web.FullServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateServlet</servlet-name>
+        <servlet-class>tracking.web.CreateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClearServlet</servlet-name>
+        <servlet-class>tracking.web.ClearServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostServlet</servlet-name>
+        <url-pattern>/api/post</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DiffServlet</servlet-name>
+        <url-pattern>/api/diff</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FullServlet</servlet-name>
+        <url-pattern>/api/full</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateServlet</servlet-name>
+        <url-pattern>/api/create</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClearServlet</servlet-name>
+        <url-pattern>/api/clear</url-pattern>
+    </servlet-mapping>
+</web-app>
